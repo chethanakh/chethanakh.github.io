@@ -156,7 +156,67 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section id="skills" class="bg-gray-100 py-8 px-4">
+            <div class="max-w-4xl mx-auto p-6 rounded-md">
+                <!-- Title for Skills Section -->
+                <div class="mb-8 text-center">
+                    <h1 class="text-3xl font-bold mb-2">Skill and tool kit</h1>
+                    <p class="text-lg text-gray-600">A glimpse into my career journey and roles I've embraced.</p>
+                </div>
 
+                <!-- Tabs Navigation -->
+                <div class="flex justify-center space-x-4 mb-6">
+                    <button class="tab-button active bg-gray-700 text-white px-4 py-2 rounded"
+                        data-tab="1">Skills</button>
+                    <button class="tab-button bg-gray-500 text-white px-4 py-2 rounded" data-tab="2">Stacks</button>
+                    <button class="tab-button bg-gray-500 text-white px-4 py-2 rounded" data-tab="3">Tools</button>
+                </div>
+
+                <!-- Tabs Content -->
+                <div class="tab-content grid grid-cols-2 sm:grid-cols-3 gap-4">
+                    <!-- Skills Tab -->
+                    <div class="tab-item active" data-content="1">
+                        <div class="grid gap-4">
+                            <!-- Example Skill Card -->
+                            <div class="shadow-lg border border-gray-500 p-4 rounded text-center">
+                                <div class="mb-2"><img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                                        alt="PHP Logo" class="h-12 mx-auto"></div>
+                                <p>PHP</p>
+                            </div>
+                            <!-- Add more skills following the same structure -->
+                        </div>
+                    </div>
+
+                    <!-- Stacks Tab -->
+                    <div class="tab-item" data-content="2">
+                        <div class="grid gap-4">
+                            <!-- Example Stack Card -->
+                            <div class="shadow-lg border border-gray-500 p-4 rounded text-center">
+                                <div class="mb-2"><img src="https://laravel.com/img/logotype.min.svg" alt="Laravel Logo"
+                                        class="h-12 mx-auto"></div>
+                                <p>Laravel</p>
+                            </div>
+                            <!-- Add more stacks following the same structure -->
+                        </div>
+                    </div>
+
+                    <!-- Tools Tab -->
+                    <div class="tab-item" data-content="3">
+                        <div class="grid gap-4">
+                            <!-- Example Tool Card -->
+                            <div class="shadow-lg border border-gray-500 p-4 rounded text-center">
+                                <div class="mb-2"><img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                                        alt="Docker Logo" class="h-12 mx-auto"></div>
+                                <p>Docker</p>
+                            </div>
+                            <!-- Add more tools following the same structure -->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer></footer>
@@ -166,6 +226,24 @@
 
         hamburgerIcon.addEventListener('click', () => {
             mobileNav.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const tab = button.getAttribute('data-tab');
+
+                // Clear active states
+                document.querySelectorAll('.tab-button').forEach(btn => {
+                    btn.classList.remove('bg-gray-700');
+                    btn.classList.add('bg-gray-500');
+                });
+                document.querySelectorAll('.tab-item').forEach(item => item.classList.remove('active'));
+
+                // Set active state for the clicked tab
+                button.classList.add('bg-gray-700', 'text-white');
+                button.classList.remove('bg-gray-500');
+                document.querySelector(`.tab-item[data-content="${tab}"]`).classList.add('active');
+            });
         });
     </script>
 </body>

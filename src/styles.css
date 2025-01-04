@@ -16,3 +16,11 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.tab-item {
+  display: none;
+}
+
+.tab-item.active {
+  display: block;
+}
