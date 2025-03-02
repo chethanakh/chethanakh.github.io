@@ -3,9 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- TODO remove this line wheen live -->
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chethana Kalpa</title>
+    <title>Chethana Kalpa | Software Engineer</title>
+    <!-- <meta name="description" content="Chethana Kalpa is a software engineer specializing in Laravel, JavaScript, and web technologies. Discover projects, skills, and contact information.">
+    <meta name="keywords" content="Chethana Kalpa, Software Engineer, Laravel Developer, Web Developer, Portfolio, Sri Lanka">
+    <meta name="author" content="Chethana Kalpa">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Chethana Kalpa | Software Engineer Portfolio">
+    <meta property="og:description" content="Explore the projects and expertise of Chethana Kalpa, a Sri Lankan software engineer specializing in web development.">
+    <meta property="og:image" content="URL_TO_YOUR_PROFILE_IMAGE">
+    <meta property="og:url" content="YOUR_WEBSITE_URL">
+    <meta name="twitter:card" content="summary_large_image"> -->
+
     <link rel="stylesheet" href="./dist/styles.css">
 </head>
 
@@ -24,8 +35,7 @@
 
             <!-- Mobile Hamburger Icon -->
             <div class="md:hidden flex justify-between items-center">
-                <img src="https://media.licdn.com/dms/image/v2/C5603AQF3alYvMHKHnw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1624881986366?e=1741219200&v=beta&t=T7gRkv6CQ4ZZhlHkPljpV4ycywmnsX1jnD1HgyOz7Uc"
-                    alt="Profile" class="w-12 h-12 rounded-full">
+                <img src="./src/images/main-image.jpg" alt="Profile" class="w-12 h-12 rounded-full">
                 <button class="text-gray-600" id="hamburger-icon">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
@@ -47,12 +57,12 @@
         </nav>
 
         <!-- Profile Section -->
-        <div>
+        <div class="mt-[10vh]">
             <img src="https://media.licdn.com/dms/image/v2/C5603AQF3alYvMHKHnw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1624881986366?e=1741219200&v=beta&t=T7gRkv6CQ4ZZhlHkPljpV4ycywmnsX1jnD1HgyOz7Uc"
                 alt="Chethana Kalpa" class="w-40 h-40 mx-auto rounded-full mb-4 hidden sm:block mt-10" />
             <h1 class="text-3xl font-bold text-gray-800">Chethana Kalpa</h1>
             <p class="text-xl text-gray-700 font-medium mt-2">
-                Software Engineer @ Sanmrk
+                Software Engineer @ Sanmark
             </p>
             <div class="mt-4 max-w-3xl mx-auto text-gray-600">
                 <p>
@@ -62,7 +72,7 @@
                     transforming ideas into functional, efficient, and visually appealing
                     software.
                 </p>
-                <p class="mt-2">
+                <p class="mt-4">
                     I'm always eager to explore new technologies and take on challenges
                     that push my skills to the next level. I thrive in collaborative
                     environments where I can contribute to meaningful projects and deliver
@@ -73,8 +83,7 @@
 
         <!-- Signature -->
         <div class="mt-8">
-            <img src="https://www.pngall.com/wp-content/uploads/14/Signature-PNG-Photos.png" alt="Your Signature"
-                class="mx-auto w-28" />
+            <img src="./src/images/signature.png" alt="Your Signature" class="mx-auto w-28" />
         </div>
     </header>
     <main>
@@ -94,12 +103,13 @@
                             <span class="bg-blue-500 h-4 w-4 rounded-full"></span>
                             <div class="ml-4">
                                 <h3 class="text-lg font-semibold text-gray-800">Sanmark Solutions</h3>
-                                <p class="text-sm text-gray-500">Full-time · 3 yrs 6 months</p>
+                                <p class="text-sm text-gray-500 time-calculatable" data-start="2021/08/01">Full-time</p>
                             </div>
                         </div>
                         <div class="mt-2">
                             <h4 class="text-md font-medium text-gray-700">Software Engineer</h4>
-                            <p class="text-sm text-gray-600">Mar 2023 - Present · 1 yr 11 mo</p>
+                            <p class="text-sm text-gray-600 time-calculatable" data-start="2023/03/01">Mar 2023 -
+                                Present</p>
                             <h4 class="text-md font-medium text-gray-700 mt-2">Associate Software Engineer</h4>
                             <p class="text-sm text-gray-600">Aug 2021 - Mar 2023 · 1 yr 8 mo</p>
                         </div>
@@ -146,9 +156,7 @@
                     <p class="text-xl text-gray-500">A glimpse into my career journey and roles I've embraced.</p>
                 </div>
 
-                <!-- Centered Timeline -->
                 <div class="relative">
-                    <!-- Vertical center line -->
                     <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-200"></div>
 
                     <!-- Sanmark Solutions (Right) -->
@@ -156,10 +164,11 @@
                         <div class="w-5/12"></div>
                         <div class="w-5/12 bg-white p-6 rounded-lg shadow-lg">
                             <h3 class="text-lg font-semibold text-gray-800">Sanmark Solutions</h3>
-                            <p class="text-sm text-gray-500">Full-time · 3 yrs 6 months</p>
+                            <p class="text-sm text-gray-500 time-calculatable" data-start="2021/08/01">Full-time</p>
                             <div class="mt-4">
                                 <h4 class="text-md font-medium text-gray-700">Software Engineer</h4>
-                                <p class="text-sm text-gray-600">Mar 2023 - Present · 1 yr 11 mo</p>
+                                <p class="text-sm text-gray-600 time-calculatable" data-start="2023/03/01">Mar 2023 -
+                                    Present</p>
                                 <h4 class="text-md font-medium text-gray-700 mt-2">Associate Software Engineer</h4>
                                 <p class="text-sm text-gray-600">Aug 2021 - Mar 2023 · 1 yr 8 mo</p>
                             </div>
@@ -208,46 +217,70 @@
 
                 <!-- Cards Grid -->
                 <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                    <!-- Education Card Example -->
                     <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow">
                         <div class="p-6">
-                            <h3 class="text-lg font-semibold text-gray-800">Bachelor of Science in Computer Science</h3>
-                            <p class="text-sm text-gray-500 mt-2">University of Example</p>
-                            <p class="text-sm text-gray-600 mt-2">2016 - 2020</p>
-                        </div>
-                    </div>
-
-                    <!-- Certification Card Example -->
-                    <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow">
-                        <div class="p-6">
-                            <h3 class="text-lg font-semibold text-gray-800">Certified Java Developer</h3>
-                            <p class="text-sm text-gray-500 mt-2">Oracle</p>
-                            <p class="text-sm text-gray-600 mt-2">Issued: 2021</p>
+                            <h3 class="text-lg font-semibold text-gray-800">Bachelor's degree, Information Technology
+                            </h3>
+                            <p class="text-sm text-gray-500 mt-2">University of Colombo School of Computing</p>
+                            <p class="text-sm text-gray-600 mt-2">2020 - Present</p>
                         </div>
                     </div>
 
                     <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow">
                         <div class="p-6">
-                            <h3 class="text-lg font-semibold text-gray-800">Certified Java Developer</h3>
-                            <p class="text-sm text-gray-500 mt-2">Oracle</p>
-                            <p class="text-sm text-gray-600 mt-2">Issued: 2021</p>
+                            <h3 class="text-lg font-semibold text-gray-800">National Diploma In Information and
+                                Communication Technology (NVQ L5)</h3>
+                            <p class="text-sm text-gray-500 mt-2"><a href="https://course.vta.lk/">National Vocational
+                                    Training Authority</a></p>
+                            <span class="text-[12px] text-gray-400"><a href="">(NVTI Baddegama)</a></span>
+                            <p class="text-sm text-gray-600 mt-2">2019 - 2020</p>
+                        </div>
+                    </div>
+
+
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="p-6">
+                            <h3 class="text-lg font-semibold text-gray-800">Computer Hardware and Network Technician
+                                (NVQ L4)</h3>
+                            <p class="text-sm text-gray-500 mt-2"><a target="_BLANK"
+                                    href="https://course.vta.lk/">National Vocational Training Authority</a></p>
+                            <span class="text-[12px] text-gray-400"><a href="">(NVTI Baddegama)</a></span>
+                            <p class="text-sm text-gray-600 mt-2">2018</p>
                         </div>
                     </div>
 
                     <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow">
                         <div class="p-6">
-                            <h3 class="text-lg font-semibold text-gray-800">Certified Java Developer</h3>
-                            <p class="text-sm text-gray-500 mt-2">Oracle</p>
-                            <p class="text-sm text-gray-600 mt-2">Issued: 2021</p>
+                            <h3 class="text-lg font-semibold text-gray-800">Certified Hubspot CMS Developer I & II
+                            </h3>
+                            <p class="text-sm text-gray-500 mt-2"><a target="_BLANK"
+                                    href="https://academy.hubspot.com/">HubSpot Inc.</a></p>
+                            <p class="text-sm text-gray-600 mt-2">Issued: 2024</p>
                         </div>
                     </div>
-                    <!-- Additional Cards can be added following the structure above -->
+
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="p-6">
+                            <h3 class="text-lg font-semibold text-gray-800">HubSpot Architecture: Data Models and APIs
+                            </h3>
+                            <p class="text-sm text-gray-500 mt-2"><a target="_BLANK"
+                                    href="https://academy.hubspot.com/">HubSpot Inc.</a></p>
+                            <p class="text-sm text-gray-600 mt-2">Issued: 2024</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="p-6">
+                            <h3 class="text-lg font-semibold text-gray-800">Cisco A+</h3>
+                            <p class="text-sm text-gray-500 mt-2">Cisco Network Academy (NVTI Baddegama)</p>
+                            <p class="text-sm text-gray-600 mt-2">Issued: 2018</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="skills" class="bg-gray-50 py-8 px-4">
             <div class="max-w-4xl mx-auto p-6 rounded-md">
-                <!-- Title for Skills Section -->
                 <div class="mb-8 text-center">
                     <h1 class="text-3xl font-bold mb-2">Skill and tool kit</h1>
                     <p class="text-lg text-gray-600">A glimpse into my career journey and roles I've embraced.</p>
@@ -256,51 +289,103 @@
                 <!-- Tabs Navigation -->
                 <div class="flex justify-center space-x-4 mb-6">
                     <button class="tab-button active bg-gray-700 text-white px-4 py-2 rounded"
-                        data-tab="1">Skills</button>
+                        data-tab="1">Languages</button>
                     <button class="tab-button bg-gray-500 text-white px-4 py-2 rounded" data-tab="2">Stacks</button>
                     <button class="tab-button bg-gray-500 text-white px-4 py-2 rounded" data-tab="3">Tools</button>
                 </div>
 
                 <!-- Tabs Content -->
-                <div class="tab-content grid grid-cols-2 sm:grid-cols-3 gap-4">
-                    <!-- Skills Tab -->
+                <div class="tab-content">
+                    <!-- Languages Tab -->
                     <div class="tab-item active" data-content="1">
-                        <div class="grid gap-4">
-                            <!-- Example Skill Card -->
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
                             <div class="shadow-lg border border-gray-500 p-4 rounded text-center">
-                                <div class="mb-2"><img
-                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-                                        alt="PHP Logo" class="h-12 mx-auto"></div>
+                                <div class="mb-2"><img src="./src/images/skills/PHP.svg" alt="PHP Logo"
+                                        class="h-12 mx-auto"></div>
                                 <p>PHP</p>
                             </div>
-                            <!-- Add more skills following the same structure -->
+                            <div class="shadow-lg border border-gray-500 p-4 rounded text-center">
+                                <div class="mb-2"><img src="./src/images/skills/nodejs.png" alt="Node js Logo"
+                                        class="h-12 mx-auto"></div>
+                                <p>Node Js</p>
+                            </div>
+                            <div class="shadow-lg border border-gray-500 p-4 rounded text-center">
+                                <div class="mb-2"><img src="./src/images/skills/javascript.svg" alt="Javascript Logo"
+                                        class="h-12 mx-auto"></div>
+                                <p>Javascript</p>
+                            </div>
+                            <div class="shadow-lg border border-gray-500 p-4 rounded text-center">
+                                <div class="mb-2"><img src="./src/images/skills/typescript.png" alt="Typescript Logo"
+                                        class="h-12 mx-auto"></div>
+                                <p>Typescript</p>
+                            </div>
+                            <div class="shadow-lg border border-gray-500 p-4 rounded text-center">
+                                <div class="mb-2"><img src="./src/images/skills/python.png" alt="Javascript Logo"
+                                        class="h-12 mx-auto"></div>
+                                <p>Python</p>
+                            </div>
+                            <div class="shadow-lg border border-gray-500 p-4 rounded text-center">
+                                <div class="mb-2"><img src="./src/images/skills/dart.png" alt="Dart Logo"
+                                        class="h-12 mx-auto"></div>
+                                <p>Dart</p>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Stacks Tab -->
                     <div class="tab-item" data-content="2">
-                        <div class="grid gap-4">
-                            <!-- Example Stack Card -->
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
                             <div class="shadow-lg border border-gray-500 p-4 rounded text-center">
-                                <div class="mb-2"><img src="https://laravel.com/img/logotype.min.svg" alt="Laravel Logo"
+                                <div class="mb-2"><img src="./src/images/skills/laravel.png" alt="Laravel Logo"
                                         class="h-12 mx-auto"></div>
                                 <p>Laravel</p>
                             </div>
-                            <!-- Add more stacks following the same structure -->
+                            <div class="shadow-lg border border-gray-500 p-4 rounded text-center">
+                                <div class="mb-2"><img src="./src/images/skills/flutter.png" alt="Flutter Logo"
+                                        class="h-12 mx-auto"></div>
+                                <p>Flutter</p>
+                            </div>
+                            <div class="shadow-lg border border-gray-500 p-4 rounded text-center">
+                                <div class="mb-2"><img src="./src/images/skills/next-js.png" alt="NextJs Logo"
+                                        class="h-12 mx-auto"></div>
+                                <p>Next Js</p>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Tools Tab -->
                     <div class="tab-item" data-content="3">
-                        <div class="grid gap-4">
-                            <!-- Example Tool Card -->
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
                             <div class="shadow-lg border border-gray-500 p-4 rounded text-center">
-                                <div class="mb-2"><img
-                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
-                                        alt="Docker Logo" class="h-12 mx-auto"></div>
+                                <div class="mb-2"><img src="./src/images/skills/docker.png" alt="Docker Logo"
+                                        class="h-12 mx-auto"></div>
                                 <p>Docker</p>
                             </div>
-                            <!-- Add more tools following the same structure -->
+                            <div class="shadow-lg border border-gray-500 p-4 rounded text-center">
+                                <div class="mb-2"><img src="./src/images/skills/linux.png" alt="Linux Logo"
+                                        class="h-12 mx-auto"></div>
+                                <p>Linux</p>
+                            </div>
+                            <div class="shadow-lg border border-gray-500 p-4 rounded text-center">
+                                <div class="mb-2"><img src="./src/images/skills/git.png" alt="Git Logo"
+                                        class="h-12 mx-auto"></div>
+                                <p>Git</p>
+                            </div>
+                            <div class="shadow-lg border border-gray-500 p-4 rounded text-center">
+                                <div class="mb-2"><img src="./src/images/skills/github-acton.png"
+                                        alt="github Action Logo" class="h-12 mx-auto"></div>
+                                <p>Github Action</p>
+                            </div>
+                            <div class="shadow-lg border border-gray-500 p-4 rounded text-center">
+                                <div class="mb-2"><img src="./src/images/skills/SonarQube.png" alt="SonarQube Logo"
+                                        class="h-12 mx-auto"></div>
+                                <p>SonarQube</p>
+                            </div>
+                            <div class="shadow-lg border border-gray-500 p-4 rounded text-center">
+                                <div class="mb-2"><img src="./src/images/skills/terraform.png" alt="Terraform Logo"
+                                        class="h-12 mx-auto"></div>
+                                <p>Terraform</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -309,7 +394,6 @@
         <section id="works" class="bg-gray-100 py-8 px-4 min-h-screen">
             <div class="max-w-4xl mx-auto p-6">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <!-- Title for Projects Section -->
                     <div class="text-center mb-12">
                         <h2 class="text-4xl font-extrabold tracking-tight text-gray-900">Open Source Projects</h2>
                         <p class="mt-4 text-lg text-gray-600">Showcasing a selection of my best work and favorite
@@ -318,16 +402,51 @@
 
                     <!-- Projects Grid -->
                     <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                        <!-- Project Card Example -->
+                        <!-- Streaming Media npm-->
                         <div
                             class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                            <img src="https://via.placeholder.com/300x200" alt="Project Image"
-                                class="w-full h-36 object-cover">
+                            <a href="https://www.npmjs.com/package/streaming-media">
+                                <img src="./src/images/work/npm-title-cover.png" alt="Streaming Media Cover Image"
+                                    class="w-full h-36 object-contain">
+                            </a>
                             <div class="p-6">
-                                <h3 class="text-2xl font-semibold text-gray-800 text-center">Project Title</h3>
-                                <p class="mt-2 text-gray-600">A brief description of the project, highlighting its main
-                                    features and objectives.</p>
-                                <a href="https://github.com/your-username/your-project" target="_blank"
+                                <h3 class="text-2xl font-semibold text-gray-800 text-center">Streaming Media</h3>
+                                <p class="mt-2 text-gray-600 text-center">Developed a custom Node.js NPM package that
+                                    enables seamless streaming of media files over HTTPS. The package supports audio and
+                                    video file streaming with efficient chunked data delivery, ensuring optimized
+                                    performance and security.
+                                </p>
+                                <a target="_BLANK" href="https://github.com/chethanakh/streaming-media" target="_blank"
+                                    class="mt-4 flex flex-row items-end justify-center text-gray-600 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mt-4" fill="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.304 3.437 9.799 8.207 11.387.6.109.793-.261.793-.581 0-.288-.011-1.227-.011-2.223-3.338.63-4.043-1.61-4.043-1.61-.547-1.387-1.335-1.757-1.335-1.757-1.089-.744.082-.729.082-.729 1.205.082 1.84 1.231 1.84 1.231 1.07 1.836 2.809 1.307 3.495.999.11-.775.42-1.307.762-1.608-2.665-.303-5.466-1.332-5.466-5.932 0-1.312.469-2.386 1.236-3.23-.125-.304-.536-1.527.117-3.184 0 0 1.008-.324 3.301 1.23a11.41 11.41 0 013.003-.404 11.44 11.44 0 013.003.404c2.292-1.555 3.299-1.23 3.299-1.23.656 1.657.244 2.88.12 3.184.77.844 1.236 1.918 1.236 3.23 0 4.611-2.803 5.625-5.475 5.921.433.372.822 1.105.822 2.227 0 1.606-.015 2.901-.015 3.293 0 .321.192.694.8.577C20.565 21.796 24 17.301 24 12 24 5.37 18.627 0 12 0z" />
+                                    </svg>
+                                    <span class="px-2">Show in Github</span>
+                                </a>
+                            </div>
+                            <div class="px-6 py-4 border-t border-gray-200 flex flex-wrap items-center justify-center">
+                                <span class="tag bg-indigo-100 text-indigo-600">NPM</span>
+                                <span class="tag bg-pink-100 text-pink-600">Open Source</span>
+                                <span class="tag bg-green-100 text-green-600">Node Js</span>
+                            </div>
+                        </div>
+                        <!-- Laravel-queue-fallback-->
+                        <div
+                            class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                            <a href="https://packagist.org/packages/sanmark/laravel-queue-fallback">
+                                <img src="./src/images/work/Laravel-queue-fallback.png"
+                                    alt="Laravel Queue Fallback Cover Image" class="h-36 object-contain">
+                            </a>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-semibold text-gray-800 text-center">Laravel Queue Fallback</h3>
+                                <p class="mt-2 text-gray-600 text-center">Developed a Laravel package that provides a
+                                    fallback mechanism for failed jobs in the queue. The package ensures that failed
+                                    jobs are retried based on the specified criteria, preventing data loss and
+                                    maintaining system reliability.
+                                </p>
+                                <a target="_BLANK" href="https://github.com/chethanakh/streaming-media" target="_blank"
                                     class="mt-4 flex flex-row items-end justify-center text-gray-600 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mt-4" fill="currentColor"
                                         viewBox="0 0 24 24">
@@ -340,10 +459,10 @@
                             <div class="px-6 py-4 border-t border-gray-200 flex flex-wrap items-center justify-center">
                                 <span class="tag bg-indigo-100 text-indigo-600">PHP</span>
                                 <span class="tag bg-pink-100 text-pink-600">Open Source</span>
-                                <span class="tag bg-green-100 text-green-600">JavaScript</span>
+                                <span class="tag bg-green-100 text-green-600">Laravel</span>
+                                <span class="tag bg-gray-100 text-gray-600">Packagist</span>
                             </div>
                         </div>
-
 
                     </div>
                 </div>
@@ -459,6 +578,29 @@
                 document.querySelector(`.tab-item[data-content="${tab}"]`).classList.add('active');
             });
         });
+
+        document.querySelectorAll('.time-calculatable').forEach(element => {
+            const start = new Date(element.dataset.start);
+            const end = element.dataset.end ? new Date(element.dataset.end) : new Date();
+
+            if (!isNaN(start) && !isNaN(end)) {
+                const diffYears = end.getFullYear() - start.getFullYear();
+                const diffMonths = end.getMonth() - start.getMonth();
+
+                let years = diffYears;
+                let months = diffMonths;
+
+                if (months < 0) {
+                    years -= 1;
+                    months += 12;
+                }
+
+                const duration = `${years > 0 ? years + ' yrs ' : ''}${months > 0 ? months + ' months' : ''}`.trim();
+                element.textContent = element.textContent + " . " + duration;
+            }
+        });
+
+
     </script>
 </body>
 
