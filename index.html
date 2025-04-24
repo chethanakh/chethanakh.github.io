@@ -30,12 +30,13 @@
                 <a href="#experience" class="hover:text-blue-600">Experience</a>
                 <a href="#skills" class="hover:text-blue-600">Skills</a>
                 <a href="#works" class="hover:text-blue-600">Works</a>
+                <a target="_blank" href="/blog" class="hover:text-blue-600">Blog</a>
                 <a href="#contact" class="hover:text-blue-600">Contact</a>
             </div>
 
             <!-- Mobile Hamburger Icon -->
             <div class="md:hidden flex justify-between items-center">
-                <img src="./src/images/main-image.jpg" alt="Profile" class="w-12 h-12 rounded-full">
+                <img src="./src/images/samall-image.jpg" alt="Profile" class="w-12 h-12 rounded-full">
                 <button class="text-gray-600" id="hamburger-icon">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
@@ -52,14 +53,15 @@
                 <a href="#experience" class="block py-2 hover:text-blue-600">Experience</a>
                 <a href="#skills" class="block py-2 hover:text-blue-600">Skills</a>
                 <a href="#works" class="block py-2 hover:text-blue-600">Works</a>
+                <a target="_blank" href="/blog" class="block py-2 hover:text-blue-600">Blog</a>
                 <a href="#contact" class="block py-2 hover:text-blue-600">Contact</a>
             </div>
         </nav>
 
         <!-- Profile Section -->
         <div class="mt-[10vh]">
-            <img src="https://media.licdn.com/dms/image/v2/C5603AQF3alYvMHKHnw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1624881986366?e=1741219200&v=beta&t=T7gRkv6CQ4ZZhlHkPljpV4ycywmnsX1jnD1HgyOz7Uc"
-                alt="Chethana Kalpa" class="w-40 h-40 mx-auto rounded-full mb-4 hidden sm:block mt-10" />
+            <img src="./src/images/main-image.jpg" alt="Chethana Kalpa"
+                class="w-40 h-40 mx-auto rounded-full mb-4 hidden sm:block mt-10" />
             <h1 class="text-3xl font-bold text-gray-800">Chethana Kalpa</h1>
             <p class="text-xl text-gray-700 font-medium mt-2">
                 Software Engineer @ Sanmark
@@ -107,9 +109,12 @@
                             </div>
                         </div>
                         <div class="mt-2">
-                            <h4 class="text-md font-medium text-gray-700">Software Engineer</h4>
-                            <p class="text-sm text-gray-600 time-calculatable" data-start="2023/03/01">Mar 2023 -
+                            <h4 class="text-md font-medium text-gray-700">Senior Software Engineer</h4>
+                            <p class="text-sm text-gray-600 time-calculatable" data-start="2025/04/01">April 2025 -
                                 Present</p>
+                            <h4 class="text-md font-medium text-gray-700">Software Engineer</h4>
+                            <p class="text-sm text-gray-600 time-calculatable" >Mar 2023 -
+                                Mar 2025 . 2 yr</p>
                             <h4 class="text-md font-medium text-gray-700 mt-2">Associate Software Engineer</h4>
                             <p class="text-sm text-gray-600">Aug 2021 - Mar 2023 · 1 yr 8 mo</p>
                         </div>
@@ -166,9 +171,12 @@
                             <h3 class="text-lg font-semibold text-gray-800">Sanmark Solutions</h3>
                             <p class="text-sm text-gray-500 time-calculatable" data-start="2021/08/01">Full-time</p>
                             <div class="mt-4">
-                                <h4 class="text-md font-medium text-gray-700">Software Engineer</h4>
-                                <p class="text-sm text-gray-600 time-calculatable" data-start="2023/03/01">Mar 2023 -
+                                <h4 class="text-md font-medium text-gray-800">Senior Software Engineer</h4>
+                                <p class="text-sm text-gray-600 time-calculatable" data-start="2025/04/01">April 2025 -
                                     Present</p>
+                                <h4 class="text-md font-medium text-gray-700 mt-2">Software Engineer</h4>
+                                <p class="text-sm text-gray-600 time-calculatable">Mar 2023 -
+                                    Mar 2025 . 2 yr</p>
                                 <h4 class="text-md font-medium text-gray-700 mt-2">Associate Software Engineer</h4>
                                 <p class="text-sm text-gray-600">Aug 2021 - Mar 2023 · 1 yr 8 mo</p>
                             </div>
@@ -553,6 +561,15 @@
         </section>
     </main>
     <footer></footer>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H6PQCBZCY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-7H6PQCBZCY');
+    </script>
     <script>
         const hamburgerIcon = document.getElementById('hamburger-icon');
         const mobileNav = document.getElementById('mobile-nav');
